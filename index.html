@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head_bar">
+  <h1 class="head_bar__title">Library Apps</h1>
+</header>
+<main>
+  <section class="input_section">
+    <h2>Masukkan Buku Baru</h2>
+    <form id="inputBook">
+      <div class="input">
+        <label for="inputJudulBuku">Judul Buku</label>
+        <input id="inputJudulBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputPenulisBuku">Penulis Buku</label>
+        <input id="inputPenulisBuku" type="text" required>
+      </div>
+      <div class="input">
+        <label for="inputTahunBuku">Tahun Terbit</label>
+        <input id="inputTahunBuku" type="number" required>
+      </div>
+      <div class="input_inline">
+        <label for="inputBookIsComplete">Selesai dibaca</label>
+        <input id="inputBookIsComplete" type="checkbox">
+      </div>
+      <button id="bookSubmit" type="submit"><b>Masukkan Buku ke rak <span>Belum selesai dibaca</span></b></button>
+    </form>
+  </section>
+    
+  <section class="book_shelf">
+    <h2>Belum Selesai Dibaca</h2>
+    <div id="incompleteBook" class="book_list"></div>
+    <hr />
+    <h2>Selesai Dibaca</h2>
+    <div id="completeBook" class="book_list"></div>
+  </section>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2023, Agustin Rahmawati</p>
+      </footer>
+
+        <script src="main.js"></script>
+  </body>
+</html>
